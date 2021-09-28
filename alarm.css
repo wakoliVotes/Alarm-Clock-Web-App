@@ -1,5 +1,11 @@
+/* body */
+body
+{
+    background-color: rgb(241, 231, 183);
+}
+
 /* A Setting Alarm Font */
-#ctime, #tpick
+#current-time, #timepicker
 {
     font-family: Impact, sans-serif;
 }
@@ -8,26 +14,28 @@
     text-align: center;
     font-weight: normal;
     margin: 5px 0 10px 0;
+    color: red;
 }
 
 /* B Setting Current Time */
-#ctime
-{
-    margin: 0 auto;
-    max-width: 350px;
+#current-time
+{    
+    margin: 15px auto;
+    max-width: 400px;
     padding: 10px;
-    background: #000;
+    background: rgb(188, 243, 60);
     text-align: center;
+    border-radius: 20px;
 }
 
-#ctime .square
+#current-time .sqr
 {
     display: inline-block;
     padding: 10px;
     margin: 5px;
 }
 
-#ctime .digits
+#current-time .digits
 {
     font-size: 24px;
     background: #fff;
@@ -35,45 +43,48 @@
     padding: 20px 10px;
     border-radius: 5px;
 }
-#ctime .text
+#current-time .text
 {
-    margin: auto;
-    color: #ddd;
+    margin: 5px;
+    color: blue;
 }
 
 /* C Setting Time Picker  */
 
-#tpick
+#timepicker
 {
     margin: 0 auto;
-    max-width: 350;
+    max-width: 400px;
     padding: 10px;
-    background: #f2f2f2;
+    background: #62ecd5;
     white-space: nowrap;
+    text-align: center;
 }
-#tpick-h, #tpick-m, #tpick-s
+#timepicker-h, #timepicker-m, #timepicker-s
 {
     display: inline-block;
     width: 32%;
 }
 
-#tpick select
+#timepicker select
 {
     box-sizing: padding-box;    
     width: 100%;
     font-size: 1.2em;
     font-weight: bold;
     margin: 20px 0;
+    color: red;
 }
-#tset, treset
+#tset, #treset
 {
     box-sizing: padding-box;
     width: 50%;
-    background: #3368b2;
-    color: #fff;
+    background: #086bee;
+    color: white;
     padding: 10px;
     border: 0;
     cursor: pointer;
+    font-weight: 800;
 }
 #tset:disabled, #treset:disabled
 {

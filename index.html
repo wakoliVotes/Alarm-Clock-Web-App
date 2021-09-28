@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="alarm.css" class="alarm">
+    <script src="alarm.js"></script>
     <title>Alarm Clock App</title>
 </head>
 <body>
     <!--A Current Time Section  -->
-    <div id="ctime">
-            <h1 class="header">Current Time</h1>
-        <div class="square">
-            <div class="digits" id="chr">00</div>
-            <div class="text">Hour</div>
+    <div id="current-time">
+            <h1 class="header">The Current Time</h1>
+        <div class="sqr">
+            <div class="digits" id="currenthr">00</div>
+            <div class="text">Hour(s)</div>
         </div>
-        <div class="square">
-            <div class="digits" id="cmin">00</div>
-            <div class="text">Minutes</div>
+        <div class="sqr">
+            <div class="digits" id="currentmin">00</div>
+            <div class="text">Minute(s)</div>
         </div>
-        <div class="square">
-            <div class="digits" id="csec">00</div>
-            <div class="text">Seconds</div>
+        <div class="sqr">
+            <div class="digits" id="currentsec">00</div>
+            <div class="text">Second(s)</div>
         </div>
     </div>
 
-    <!-- D Set Alarm S  Section -->
-    <div id="tpick">
+    <!-- B Set Alarm Section -->
+    <div id="timepicker">
         <h1 class="header">Set Alarm</h1>
-        <div id="tpick-h"></div>
-        <div id="tpick-m"></div>
-        <div id="tpick-s"></div>
+        <div id="timepicker-h"></div>
+        <div id="timepicker-m"></div>
+        <div id="timepicker-s"></div>
         <div>
             <input type="button" value="Set" id="tset"/>
             <input type="button" value="Reset" id="treset" disabled>
@@ -39,6 +40,8 @@
     <!-- C Alarm Sound -->
     <audio id="alarm-sound" loop>
         <source src="wake-up-sound.mp3" type="audio/mp3">
-    </audio>    
+    </audio>
+
+    <script src="alarm.js"></script>
 </body>
 </html>
