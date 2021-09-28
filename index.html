@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alarm.css" class="alarm">
+    <title>Alarm Clock App</title>
+</head>
+<body>
+    <!--A Current Time Section  -->
+    <div id="current-time">
+            <h1 class="header">The Current Time</h1>
+        <div class="sqr">
+            <div class="digits" id="current-hr">00</div>
+            <div class="text">Hour(s)</div>
+        </div>
+        <div class="sqr">
+            <div class="digits" id="current-min">00</div>
+            <div class="text">Minute(s)</div>
+        </div>
+        <div class="sqr">
+            <div class="digits" id="current-sec">00</div>
+            <div class="text">Second(s)</div>
+        </div>
+    </div>
+
+    <!-- B Set Alarm Section -->
+    <div id="time-picker">
+        <h1 class="header">Set Alarm</h1>
+        <div id="time-picker-h"></div>
+        <div id="time-picker-m"></div>
+        <div id="time-picker-s"></div>
+        <div>
+            <input type="button" value="Set" id="tset"/>
+            <input type="button" value="Reset" id="treset" disabled>
+        </div>
+    </div>
+    <!-- C Alarm Sound -->
+    <audio id="alarm-sound" loop>
+        <source src="wake-up-sound.mp3" type="audio/mp3">
+    </audio>    
+</body>
+</html>
